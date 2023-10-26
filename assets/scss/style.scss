@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-image: linear-gradient(
+    340deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(289deg 100% 21%) 12%,
+    hsl(315deg 100% 27%) 23%,
+    hsl(329deg 100% 36%) 34%,
+    hsl(337deg 100% 43%) 46%,
+    hsl(357deg 91% 59%) 57%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(34deg 100% 53%) 78%,
+    hsl(45deg 100% 50%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lbl-danger {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.2px);
+  -webkit-backdrop-filter: blur(2.2px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 550px;
+  width: 650px;
+  padding: 25px;
+  color: #fff;
+  .form-title {
+    text-align: center;
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    label {
+      padding: 16px 0;
+    }
+    input {
+      width: 100%;
+      font-size: 18px;
+      padding: 12px 8px;
+      margin-bottom: 21px;
+      outline: none;
+      border: none;
+      background-image: none;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      border-radius: 7px;
+      box-shadow: rgba(248, 248, 248, 0.925) 0px 3px 8px;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+  .btn-submit {
+   text-align: center;
+   margin-top: auto;
+  }
+}
+
+.table-container {
+  padding-top: 27px;
+  table {
+    width: 100%;
+    thead {
+      tr {
+        display: flex;
+        gap: 100px;
+        justify-content: space-between;
+        background: #232D3F;
+        color: #fff;
+        padding: 20px 40px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+    tbody {
+      tr {
+        display: flex;
+        justify-content: space-between;
+        background: #005B41;
+        color: #fff;
+        font-weight: 700;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+}
